@@ -1,0 +1,30 @@
+#header {
+    background: rgb(255,255,255);
+    background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(189,225,255,1) 100%);
+    padding: 16px 16px 150px 16px;
+    border-bottom-right-radius: 2rem;
+}
+
+#form-calc {
+    background-color: #fff;
+    width: 90%;
+    margin-top: -140px;
+}
+
+.b-shadow {
+    box-shadow: 16px 16px 30px  #bde1ff59;
+}
+
+.icon-w1 {
+    font-size: 36px;
+    color: #97bbda
+}
+
+.icon-w2 {
+    font-size: 30px;
+}
+
+.font-s1 {
+    font-size: 50px;
+    font-weight: bold;
+}
