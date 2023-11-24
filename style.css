@@ -29,3 +29,16 @@
     font-size: 50px;
     font-weight: bold;
 }
+
+@media screen and (min-width: 1023px) {
+    #form-calc {
+        width: 40%;
+        height: 50%;
+        margin-top: 0;
+        margin-left: -140px;
+    }
+
+    #header {
+        padding: 16px 150px 120px 16px;
+    }
+}
