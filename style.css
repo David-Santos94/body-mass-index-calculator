@@ -13,7 +13,7 @@ font paragrafos - font-p
 }
 
 .font-h2 {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -30,6 +30,10 @@ font paragrafos - font-p
 
 .font-p {
     font-size: 16px;
+}
+
+section {
+    margin-bottom: 70px;
 }
 
 #header {
@@ -100,7 +104,7 @@ font paragrafos - font-p
 
 @media screen and (min-width: 1023px) {
     #header {
-        padding:50px 400px 250px 120px;
+        padding:50px 390px 250px 120px;
     }
 
     .content {
