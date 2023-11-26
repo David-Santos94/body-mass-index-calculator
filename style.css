@@ -47,13 +47,12 @@ section {
     margin-bottom: 55px;
 }
 
-.icon-w1 {
+.icon-top {
     font-size: 36px;
-    color: #97bbda;
 }
 
-.icon-w2 {
-    font-size: 30px;
+.bi-universal-access-circle {
+    color: #97bbda;
 }
 
 #form-calc {
@@ -88,6 +87,38 @@ section {
     color: #fff;
 }
 
+.row-bg-color {
+    background-color: #f6f9fe;
+}
+
+.icons-middle {
+    display: inline-block;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 25px;
+    border: solid 5px;
+    width: 50px;
+    margin-bottom: 23px;
+}
+
+.bi-cup-hot {
+    background-color: #fcdded;
+    border-color: #fcdded;
+    color: #cd5689;
+}
+
+.bi-bicycle {
+    background-color: #faeee2;
+    border-color: #faeee2;
+    color: #efac66;    
+}
+
+.bi-moon-stars {
+    background-color: #d3f6f7;
+    border-color: #d3f6f7;
+    color: #5bb8b5;    
+}
+
 @media screen and (min-width: 767px) {
     #header {
         padding-bottom: 265px;
@@ -100,6 +131,10 @@ section {
     #result {
         border-radius: 16px 70px 70px 16px;
     }
+
+    #image {
+        margin-left: -70px;
+    }
 }
 
 @media screen and (min-width: 1023px) {
@@ -111,7 +146,7 @@ section {
         margin: 0;
     }
 
-    .icon-w1 {
+    .icon-top {
         display: block;
         margin-bottom: 120px;
     }
@@ -125,5 +160,10 @@ section {
         height: 50%;
         margin-top: 40px;
         margin-left: -19%;
+    }
+
+    #image {
+        margin-left: 0;
+        width: 
     }
 }
