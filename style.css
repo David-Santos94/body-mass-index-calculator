@@ -119,6 +119,10 @@ section {
     color: #5bb8b5;    
 }
 
+#riskLG {
+    display: none;
+}
+
 @media screen and (min-width: 767px) {
     #header {
         padding-bottom: 265px;
@@ -164,6 +168,9 @@ section {
 
     #image {
         margin-left: 0;
-        width: 
+    }
+
+    #riskLG {
+        display: block;
     }
 }
