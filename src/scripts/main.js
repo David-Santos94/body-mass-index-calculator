@@ -73,34 +73,34 @@ document.addEventListener('DOMContentLoaded', function(){
         } else if (_sistema === 'imperial') {
             imc = (_peso / (_altura * _altura)) * 703;
         } else {
-            alert("Sistema inválido. Escolha 'métrico' ou 'imperial'.");
+            alert("Invalid system. Choose 'metric' or 'imperial'.");
             alturaElement.value = '';
             pesoElement.value = '';
             altura = 0;
             peso = 0;
-            throw new Error("Sistema inválido. Escolha 'métrico' ou 'imperial'.");
+            throw new Error("Invalid system. Choose 'metric' or 'imperial'.");
         }
     
         let classificacao, faixaSaudavel;
         
         if (imc < 18.5) {
-            classificacao = 'Abaixo do peso';
-            faixaSaudavel = 'IMC saudável está entre 18,5 e 24,9.';
+            classificacao = 'Underweight';
+            faixaSaudavel = 'Healthy BMI is between 18.5 and 24.9.';
         } else if (imc >= 18.5 && imc < 24.9) {
-            classificacao = 'Peso normal';
-            faixaSaudavel = 'Mantenha-se dentro dessa faixa!';
+            classificacao = 'Normal weight';
+            faixaSaudavel = 'Stay within this range!';
         } else if (imc >= 25 && imc < 29.9) {
-            classificacao = 'Sobrepeso';
-            faixaSaudavel = 'IMC saudável está entre 18,5 e 24,9.';
+            classificacao = 'Overweight';
+            faixaSaudavel = 'Healthy BMI is between 18.5 and 24.9.';
         } else if (imc >= 30 && imc < 34.9) {
-            classificacao = 'Obesidade grau 1';
-            faixaSaudavel = 'IMC saudável está entre 18,5 e 24,9.';
+            classificacao = 'Class I obesity';
+            faixaSaudavel = 'Healthy BMI is between 18.5 and 24.9.';
         } else if (imc >= 35 && imc < 39.9) {
-            classificacao = 'Obesidade grau 2';
-            faixaSaudavel = 'IMC saudável está entre 18,5 e 24,9.';
+            classificacao = 'Class II obesity';
+            faixaSaudavel = 'Healthy BMI is between 18.5 and 24.9.';
         } else {
-            classificacao = 'Obesidade grau 3';
-            faixaSaudavel = 'IMC saudável está entre 18,5 e 24,9.';
+            classificacao = 'Class III obesity';
+            faixaSaudavel = 'Healthy BMI is between 18.5 and 24.9.';
         }
     
         return {
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function(){
     function exibeResultado(resultado) {
         document.getElementById('yourBMI').innerHTML = 'Your BMI is...';
         document.getElementById('BMI').innerHTML = resultado.imc;
-        document.getElementById('suggests').innerHTML = `Classificação: ${resultado.classificacao}<br>Faixa saudável: ${resultado.faixaSaudavel}`;
+        document.getElementById('suggests').innerHTML = `Classification: ${resultado.classificacao}<br>Healthy band: ${resultado.faixaSaudavel}`;
         console.log(`IMC: ${resultado.imc}`);
         console.log(`Classificação: ${resultado.classificacao}`);
         console.log(`Faixa saudável: ${resultado.faixaSaudavel}`);

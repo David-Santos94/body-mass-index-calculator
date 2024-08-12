@@ -1,0 +1,40 @@
+@use 'variables';
+
+.row-bg-color {
+    background-color: variables.$bgRow;
+}
+
+.icons-middle {
+    display: inline-block;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 25px;
+    border: solid 5px;
+    width: 50px;
+    margin-bottom: 23px;
+}
+
+.bi-cup-hot {
+    @include variables.iconCupHot;
+}
+
+.bi-bicycle {
+    @include variables.iconBicycle;
+}
+
+.bi-moon-stars {
+    @include variables.iconMoonStars;  
+}
+
+@media screen and (min-width: 767px) {
+    #image {
+        margin-left: -70px;
+    }
+}
+
+@media screen and (min-width: 1023px) { 
+    #image {
+        margin-left: 0;
+    }
+
+}

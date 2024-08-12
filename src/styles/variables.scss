@@ -1,0 +1,28 @@
+$BShadowColor: #bde1ff8f;
+$bgHeader: rgb(255,255,255);
+$bgHeaderGradient: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(189,225,255,1) 100%);
+$iconTopColor: #97bbda;
+$bgForm: #fff;
+$bgInputGroupText: #fff;
+$inputGroupTextColor: #0d6efd;
+$bgResult: #0d6efd;
+$resultColor: #fff;
+$bgRow: #f6f9fe;
+
+@mixin iconCupHot {
+    background-color: #fcdded;
+    border-color: #fcdded;
+    color: #cd5689;
+}
+
+@mixin iconBicycle {
+    background-color: #faeee2;
+    border-color: #faeee2;
+    color: #efac66; 
+}
+
+@mixin iconMoonStars {
+    background-color: #d3f6f7;
+    border-color: #d3f6f7;
+    color: #5bb8b5;  
+}

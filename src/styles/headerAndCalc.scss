@@ -1,0 +1,89 @@
+@use 'variables';
+
+#header {
+    background: variables.$bgHeader;
+    background: variables.$bgHeaderGradient;
+    padding:5% 5% 175px 5%;
+    border-bottom-right-radius: 2rem;
+}
+
+.content {
+    margin-bottom: 55px;
+}
+
+.icon-top {
+    font-size: 36px;
+}
+
+.bi-universal-access-circle {
+    color: variables.$iconTopColor;
+}
+
+#form-calc {
+    background-color: variables.$bgForm;
+    width: 90%;
+    margin-top: -175px;
+    position: relative;
+}
+
+.form-control {
+    border-right: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.input-group-text {
+    background-color: variables.$bgInputGroupText;
+    font-size: 28px;
+    font-weight: bold;
+    color: variables.$inputGroupTextColor;
+}
+
+#result {
+    background-color: variables.$bgResult;
+    padding: 30px;
+    margin: 0 12px 0 12px;
+    border-radius: 16px;
+    color: variables.$resultColor;
+}
+
+@media screen and (min-width: 767px) {
+    #header {
+        padding-bottom: 265px;
+    }
+
+    #form-calc {
+        margin-top: -265px;        
+    }
+
+    #result {
+        border-radius: 16px 70px 70px 16px;
+    }
+
+    #image {
+        margin-left: -70px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    #header {
+        padding:50px 390px 250px 120px;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .icon-top {
+        display: block;
+        margin-bottom: 120px;
+    }
+
+    #form-calc {
+        width: 40%;
+        height: 50%;
+        margin-top: 40px;
+        margin-left: -19%;
+    }
+
+}

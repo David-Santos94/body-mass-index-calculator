@@ -1,3 +1,8 @@
+@use 'headerAndCalc';
+@use 'IMCResultMeans';
+@use 'limitationsIMC';
+@use 'variables';
+
 /* Fonts 
 font titulo 1 - font-h1
 font tutilo 2 - font-h2
@@ -36,141 +41,12 @@ section {
     margin-bottom: 70px;
 }
 
-#header {
-    background: rgb(255,255,255);
-    background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(189,225,255,1) 100%);
-    padding:5% 5% 175px 5%;
-    border-bottom-right-radius: 2rem;
-}
-
-.content {
-    margin-bottom: 55px;
-}
-
-.icon-top {
-    font-size: 36px;
-}
-
-.bi-universal-access-circle {
-    color: #97bbda;
-}
-
-#form-calc {
-    background-color: #fff;
-    width: 90%;
-    margin-top: -175px;
-    position: relative;
-}
-
-.form-control {
-    border-right: none;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.input-group-text {
-    background-color: #fff;
-    font-size: 28px;
-    font-weight: bold;
-    color: #0d6efd;
-}
-
 .b-shadow {
-    box-shadow: 16px 16px 30px  #bde1ff8f;
-}
-
-#result {
-    background-color: #0d6efd;
-    padding: 30px;
-    margin: 0 12px 0 12px;
-    border-radius: 16px;
-    color: #fff;
-}
-
-.row-bg-color {
-    background-color: #f6f9fe;
-}
-
-.icons-middle {
-    display: inline-block;
-    text-align: center;
-    font-size: 26px;
-    border-radius: 25px;
-    border: solid 5px;
-    width: 50px;
-    margin-bottom: 23px;
-}
-
-.bi-cup-hot {
-    background-color: #fcdded;
-    border-color: #fcdded;
-    color: #cd5689;
-}
-
-.bi-bicycle {
-    background-color: #faeee2;
-    border-color: #faeee2;
-    color: #efac66;    
-}
-
-.bi-moon-stars {
-    background-color: #d3f6f7;
-    border-color: #d3f6f7;
-    color: #5bb8b5;    
-}
-
-#riskLG {
-    display: none;
-}
-
-@media screen and (min-width: 767px) {
-    #header {
-        padding-bottom: 265px;
-    }
-
-    #form-calc {
-        margin-top: -265px;        
-    }
-
-    #result {
-        border-radius: 16px 70px 70px 16px;
-    }
-
-    #image {
-        margin-left: -70px;
-    }
+    box-shadow: 16px 16px 30px variables.$BShadowColor;
 }
 
 @media screen and (min-width: 1023px) {
-    #header {
-        padding:50px 390px 250px 120px;
-    }
-
-    .content {
-        margin: 0;
-    }
-
-    .icon-top {
-        display: block;
-        margin-bottom: 120px;
-    }
-
     .font-h1 {
         padding: 0 0 20px 0;
-    }
-
-    #form-calc {
-        width: 40%;
-        height: 50%;
-        margin-top: 40px;
-        margin-left: -19%;
-    }
-
-    #image {
-        margin-left: 0;
-    }
-
-    #riskLG {
-        display: block;
     }
 }
